@@ -1,0 +1,12 @@
+program.set_bit_length(128)
+program.set_security(256)
+
+def test(actual, expected):
+    atual = actual.reveal()
+    print_ln('expected %s, got %s', expected, actual)
+
+
+a = sint.get_input_from(0)
+b = sint.get_input_from(1)
+
+test((a + b).reveal(), 340282366920938463463374607431768211457)
