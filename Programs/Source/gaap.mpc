@@ -1,0 +1,8 @@
+accum = sint(0)
+
+print_ln('The program arg 0 is %s', program.args[2])
+
+for i in range(int(program.args[2])):
+    accum += sint.get_input_from(i)
+
+print_ln('The sum of the shares is %s', accum.reveal())
